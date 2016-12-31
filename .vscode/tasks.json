@@ -1,0 +1,25 @@
+{
+    "version": "0.1.0",
+    "command": "python",
+    "args": ["manage.py"],
+    "isShellCommand": true,    
+    "showOutput": "always",
+    "echoCommand": true,
+    "suppressTaskName": true,
+    "tasks": [
+        {
+            "taskName": "run tests",
+            "isTestCommand": true,
+            "args": [
+                "test"
+            ]
+        },
+        {
+            "taskName": "run",
+            "isBuildCommand": true,
+            "args": [
+                "runserver"
+            ]
+        }
+    ]    
+}

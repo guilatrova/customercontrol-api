@@ -1,0 +1,4 @@
+{
+    "python.pythonPath": "c:/Users/Guilherme/OneDrive/Projetos/Workspace/CustomerControl/api/myenv/scripts/python.exe",
+    "python.linting.pylintArgs": ["--load-plugins", "pylint_django"]
+}
