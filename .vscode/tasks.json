@@ -5,21 +5,14 @@
     "isShellCommand": true,    
     "showOutput": "always",
     "echoCommand": true,
-    "suppressTaskName": true,
     "tasks": [
         {
-            "taskName": "run tests",
-            "isTestCommand": true,
-            "args": [
-                "test"
-            ]
+            "taskName": "test",
+            "isTestCommand": true
         },
         {
-            "taskName": "run",
-            "isBuildCommand": true,
-            "args": [
-                "runserver"
-            ]
+            "taskName": "runserver",
+            "isBuildCommand": true
         }
     ]    
 }
