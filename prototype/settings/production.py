@@ -1,5 +1,4 @@
 import os
-# Parse database configuration from $DATABASE_URL
 import dj_database_url
 from prototype.settings.base import *
 
