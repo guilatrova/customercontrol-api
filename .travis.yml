@@ -5,7 +5,6 @@ python:
   - "nightly"
 
 before_install:
-  - export SECRET_KEY=LoveJesus
   - export DJANGO_SETTINGS_MODULE=prototype.settings.production
 
 # command to install dependencies
