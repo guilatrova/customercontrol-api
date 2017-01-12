@@ -1,0 +1,18 @@
+language: python
+python:
+  - "3.2"
+  - "3.3"
+  - "3.4"
+  - "3.5"
+  - "nightly"
+
+before_install:
+  - export SECRET_KEY=LoveJesus
+  - export DJANGO_SETTINGS_MODULE=prototype.settings.production
+
+# command to install dependencies
+install: 
+  - "pip install -r requirements.txt"
+
+script: 
+  - python manage.py test
