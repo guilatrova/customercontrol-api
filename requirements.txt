@@ -3,3 +3,4 @@ djangorestframework
 Markdown
 gunicorn
 dj-database-url
+psycopg2
