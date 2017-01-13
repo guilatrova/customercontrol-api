@@ -2,8 +2,6 @@ import os
 import dj_database_url
 from prototype.settings.base import *
 
-PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
-
 SECRET_KEY = os.environ['SECRET_KEY']
 DEBUG = False
 
@@ -19,7 +17,8 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 #ADMINS = (('Guilherme Latrova','guilhermelatrova@hotmail.com'),)
 
 # Static files
-STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_DIRS = (
-    os.path.join(PROJECT_ROOT, 'static'),
+    os.path.join(BASE_DIR, 'static'),
 )
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
